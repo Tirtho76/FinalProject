@@ -2,6 +2,5 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('Home');
-});
+Route::get('/','App\Http\Controllers\HomeController@HomeIndex');
+Route::get('/visitor','App\Http\Controllers\VisitorController@VisitorIndex');

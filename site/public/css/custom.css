@@ -1,6 +1,9 @@
+.bg-light{
+    background-color:white!important;
+}
 .nav-font{
     font-family: 'Hind Siliguri', sans-serif;
-    color: whitesmoke !important;
+    color: teal !important;
 }
 .nav-font:hover{
     color: #FF2D20!important;
@@ -12,7 +15,8 @@
 }
 
 .nav-before{
-    background-color: teal !important;
+    /* background-color: teal !important; */
+    border-bottom: 1px solid teal!important;
 }
 
 .normal-btn{

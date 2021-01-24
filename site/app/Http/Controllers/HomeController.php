@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\VisitorModel;
+use App\Models\CourseModel;
 
 class HomeController extends Controller
 {
@@ -14,6 +15,8 @@ class HomeController extends Controller
         $TimeDate = date('y-m-d h:i:sa');
         VisitorModel::insert(['ip_address'=>$UserIP,'visit_time'=>$TimeDate]);
 
-        return view('Home');
+        $CourseData = json_decode(CourseModel::all());
+
+        return view('Home',['CourseData'=>$CourseData]);
     }
 }

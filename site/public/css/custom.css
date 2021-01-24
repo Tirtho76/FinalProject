@@ -49,7 +49,7 @@
 .top-banner-img{
     margin-top:40px;
     width: 80%;
-    height: 100%!important;
+    height: auto!important;
 }
 .top-banner-title{
     font-family: 'Hind Siliguri', sans-serif;

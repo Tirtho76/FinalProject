@@ -15,3 +15,8 @@ Route::post('/getCourseDetails','App\Http\Controllers\CourseController@getCourse
 Route::post('/CourseDelete','App\Http\Controllers\CourseController@CourseDelete');
 Route::post('/CourseUpdate','App\Http\Controllers\CourseController@CourseUpdate');
 Route::post('/CourseAdd','App\Http\Controllers\CourseController@CourseAdd');
+
+// Admin panel contact management
+Route::get('/Contact', 'App\Http\Controllers\ContactController@ContactIndex');
+Route::get('/getContactData', 'App\Http\Controllers\ContactController@getContactData');
+Route::post('/ContactDelete', 'App\Http\Controllers\ContactController@ContactDelete');

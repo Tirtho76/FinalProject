@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\VisitorModel;
-use App\Models\CourseModel;
+use App\Models\CoursModel;
 use App\Models\ContactModel;
 
 class HomeController extends Controller
@@ -16,9 +16,9 @@ class HomeController extends Controller
         $TimeDate = date('y-m-d h:i:sa');
         VisitorModel::insert(['ip_address'=>$UserIP,'visit_time'=>$TimeDate]);
 
-        $CourseData = json_decode(CourseModel::all());
+        $CoursData = json_decode(CoursModel::all());
 
-        return view('Home',['CourseData'=>$CourseData]);
+        return view('Home',['CoursData'=>$CoursData]);
     }
 
     function ContactSend(Request $request){

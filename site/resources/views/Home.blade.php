@@ -4,7 +4,7 @@
 
 @include('Component.HomeBanner')
 
-@include('Component.HomeCourse')
+@include('Component.HomeCours')
 
 @include('Component.HomeContact')
 

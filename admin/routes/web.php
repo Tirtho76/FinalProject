@@ -2,19 +2,29 @@
 
 use Illuminate\Support\Facades\Route;
 
-// Admin panel home management 
+// Admin Panel Home Management 
 Route::get('/','App\Http\Controllers\HomeController@HomeIndex');
 
-// Admin panel visitor management 
+// Admin Panel Visitor Management 
 Route::get('/visitor','App\Http\Controllers\VisitorController@VisitorIndex');
 
-// Admin panel course management 
-Route::get('/Course','App\Http\Controllers\CourseController@CourseIndex');
-Route::get('/getCourseData', 'App\Http\Controllers\CourseController@getCourseData');
-Route::post('/getCourseDetails','App\Http\Controllers\CourseController@getCourseDetails');
-Route::post('/CourseDelete','App\Http\Controllers\CourseController@CourseDelete');
-Route::post('/CourseUpdate','App\Http\Controllers\CourseController@CourseUpdate');
-Route::post('/CourseAdd','App\Http\Controllers\CourseController@CourseAdd');
+// Admin Panel Cours Management 
+Route::get('/cours','App\Http\Controllers\CoursController@CoursIndex');
+Route::get('/getCoursData', 'App\Http\Controllers\CoursController@getCoursData');
+Route::post('/CoursDelete', 'App\Http\Controllers\CoursController@CoursDelete');
+Route::post('/CoursDetails', 'App\Http\Controllers\CoursController@getCoursDetails');
+Route::post('/CoursUpdate', 'App\Http\Controllers\CoursController@CoursUpdate');
+Route::post('/CoursAdd', 'App\Http\Controllers\CoursController@CoursAdd');
+
+
+
+
+
+
+
+
+
+
 
 // Admin panel contact management
 Route::get('/Contact', 'App\Http\Controllers\ContactController@ContactIndex');

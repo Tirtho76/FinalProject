@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\VisitorModel;
 use App\Models\CoursModel;
 use App\Models\ContactModel;
+use App\Models\ServicesModel;
 
 class HomeController extends Controller
 {
@@ -16,9 +17,16 @@ class HomeController extends Controller
         $TimeDate = date('y-m-d h:i:sa');
         VisitorModel::insert(['ip_address'=>$UserIP,'visit_time'=>$TimeDate]);
 
+        $ServicesData =  json_decode(ServicesModel::all());
+
+
+
         $CoursData = json_decode(CoursModel::all());
 
-        return view('Home',['CoursData'=>$CoursData]);
+        return view('Home',[
+            'CoursData'=>$CoursData,
+            'ServicesData'=>$ServicesData,
+            ]);
     }
 
     function ContactSend(Request $request){

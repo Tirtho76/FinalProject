@@ -1,6 +1,6 @@
 <div class="container section-marginTop text-center">
-    <h1 class="section-title">Service</h1>
-    <h3 class="section-subtitle">This is service section</h3>
+    <h1 class="section-title">Project</h1>
+    <h3 class="section-subtitle">This is Project section</h3>
     <div class="row">
 
         @foreach($ServicesData as $ServicesData)

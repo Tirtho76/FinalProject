@@ -8,6 +8,17 @@ Route::get('/','App\Http\Controllers\HomeController@HomeIndex');
 // Admin Panel Visitor Management 
 Route::get('/visitor','App\Http\Controllers\VisitorController@VisitorIndex');
 
+// Admin Panel Service Management 
+Route::get('/services','App\Http\Controllers\ServiceController@ServiceIndex');
+Route::get('/getServicesData','App\Http\Controllers\ServiceController@getServicesData');
+
+
+
+
+
+
+
+
 // Admin Panel Cours Management 
 Route::get('/cours','App\Http\Controllers\CoursController@CoursIndex');
 Route::get('/getCoursData', 'App\Http\Controllers\CoursController@getCoursData');

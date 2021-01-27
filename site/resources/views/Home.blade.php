@@ -4,5 +4,6 @@
 
 @include('Component.HomeBanner')
 
+@include('Component.HomeCourse')
 
 @endsection  

@@ -11,13 +11,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link nav-font font-weight-bold" href="#">Course</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nav-font font-weight-bold" href="#">Project</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nav-font font-weight-bold" href="#">Blog</a>
-            </li>
+            </li>                        
             <li class="nav-item">
                 <a class="nav-link nav-font font-weight-bold" href="#">Contact</a>
             </li>

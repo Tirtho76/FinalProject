@@ -23,14 +23,7 @@
 
                     <li> <a href="{{url('/visitor')}}" ><span> <i class="fas fa-users"></i> </span><span class="hide-menu">Visitor</span></a></li>
 
-                    <li> <a href="{{url('/services')}}" ><span> <i class="fas fa-globe"></i> </span><span class="hide-menu">Services</span></a></li>
-                    <!-- <li> <a href="{{url('/cours')}}" ><span> <i class="fas fa-book-open"></i> </span><span class="hide-menu">Cours</span></a></li> -->
-
-                    <!-- <li> <a href="{{url('/courses')}}" ><span> <i class="fas fa-book-open"></i> </span><span class="hide-menu">Courses</span></a></li> -->
-
-                    <!-- <li> <a href="{{url('/Course')}}" ><span> <i class="fas fa-book-open"></i> </span><span class="hide-menu">Course</span></a></li> -->
-
-                    <!-- <li> <a href="{{url('/Contact')}}" ><span> <i class="far fa-envelope"></i> </span><span class="hide-menu">Contact</span></a></li> -->
+                    
                 </ul>
             </nav>
         </div>

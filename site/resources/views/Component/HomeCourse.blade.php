@@ -12,6 +12,6 @@
                 <a target="_blank" href="{{$CoursesData->course_link}}" class="normal-btn btn">JOIN</a>
             </div>
         </div>
-        @endforeach    
+        @endforeach  
     </div>
 </div>

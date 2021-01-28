@@ -8,4 +8,6 @@
 
 @include('Component.HomeContact')
 
+@include('Component.HomeFooter')
+
 @endsection  

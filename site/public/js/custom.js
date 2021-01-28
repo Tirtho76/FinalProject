@@ -29,12 +29,10 @@ function SendContact(contact_name,contact_mobile,contact_email,contact_msg) {
         },2000)
     }
     else if(contact_msg.length==0){
-
         $('#contactSendBtnId').html('Enter Your Text!')
         setTimeout(function () {
             $('#contactSendBtnId').html('Submit');
         },2000)
-
     }
     else {
         $('#contactSendBtnId').html('Sending...')
@@ -44,33 +42,32 @@ function SendContact(contact_name,contact_mobile,contact_email,contact_msg) {
             contact_email:contact_email,
             contact_msg: contact_msg,
         })
-            .then(function (response) {
-                if(response.status==200){
-                    if(response.data==1){
-                        $('#contactSendBtnId').html('Successfully Send Data')
-                        setTimeout(function () {
-                            $('#contactSendBtnId').html('Submit');
-                        },3000)
-
+        .then(function (response) {
+            if(response.status==200){
+                if(response.data==1){
+                    $('#contactSendBtnId').html('Successfully Send Data')
+                    setTimeout(function () {
+                    $('#contactSendBtnId').html('Submit');
+                    },3000)
                     }
-                    else{
-                        $('#contactSendBtnId').html('Fail! Try Again')
-                        setTimeout(function () {
-                            $('#contactSendBtnId').html('Submit');
-                        },3000)
+                else{
+                    $('#contactSendBtnId').html('Fail! Try Again')
+                    setTimeout(function () {
+                    $('#contactSendBtnId').html('Submit');
+                    },3000)
                     }
                 }
                 else {
                     $('#contactSendBtnId').html('Fail! Try Again')
                     setTimeout(function () {
-                        $('#contactSendBtnId').html('Submit');
+                    $('#contactSendBtnId').html('Submit');
                     },3000)
                 }
 
-            }).catch(function (error) {
+        }).catch(function (error) {
             $('#contactSendBtnId').html('Try Again!')
             setTimeout(function () {
-                $('#contactSendBtnId').html('Submit');
+            $('#contactSendBtnId').html('Submit');
             },3000)
         })
     }

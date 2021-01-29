@@ -1,4 +1,3 @@
-<!-- This is information part  -->
 <div class="jumbotron  jumbotron-fluid section-marginTop mb-0">
     <div class="container">
         <div class="row">

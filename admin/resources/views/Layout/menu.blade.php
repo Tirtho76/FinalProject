@@ -5,7 +5,7 @@
                 <ul class="navbar-nav mr-auto mt-md-0">
                     <li class="nav-item "> <a class="nav-link nav-toggler  hidden-md-up  waves-effect waves-dark" href="javascript:void(0)"><i class="fas  fa-bars"></i></a></li>
                     <li class="nav-item m-l-10"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="fas fa-bars"></i></a> </li> 
-                    <li class="nav-item mt-3">ADMIN</li>
+                    <li class="nav-item mt-3">CONTRIBUTOR</li>
                 </ul>
                 <ul class="navbar-nav my-lg-0">
                     <li class="nav-item"><a href="" class="btn btn-sm btn-danger">Logout</a></li>
@@ -23,7 +23,9 @@
 
                     <li> <a href="{{url('/visitor')}}" ><span> <i class="fas fa-users"></i> </span><span class="hide-menu">Visitor</span></a></li>
 
-                    <li> <a href="{{url('/courses')}}" ><span> <i class="fas fa-book-open"></i> </span><span class="hide-menu">Courses</span></a></li>
+                    <li> <a href="{{url('/blog')}}" ><span> <i class="fas fa-book-open"></i> </span><span class="hide-menu">Blog</span></a></li>
+
+                    <li> <a href="{{url('/feedback')}}" ><span> <i class="fas fa-comment-alt"></i> </span><span class="hide-menu">FeedBack</span></a></li>
                     
                 </ul>
             </nav>

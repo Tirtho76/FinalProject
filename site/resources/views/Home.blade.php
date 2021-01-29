@@ -4,9 +4,9 @@
 
 @include('Component.HomeBanner')
 
-@include('Component.HomeCourse')
+@include('Component.HomeBlog')
 
-@include('Component.HomeContact')
+@include('Component.HomeFeedback')
 
 @include('Component.HomeFooter')
 

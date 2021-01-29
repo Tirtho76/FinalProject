@@ -10,10 +10,10 @@
                 <a class="nav-link nav-font font-weight-bold" href="#">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-font font-weight-bold" href="#">Course</a>
+                <a class="nav-link nav-font font-weight-bold" href="#">Blog</a>
             </li>                        
             <li class="nav-item">
-                <a class="nav-link nav-font font-weight-bold" href="#">Contact</a>
+                <a class="nav-link nav-font font-weight-bold" href="#">FeedBack</a>
             </li>
         </ul>        
     </div>

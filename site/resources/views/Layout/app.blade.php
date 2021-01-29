@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>@yield('title')</title>    
+        <title>ClassRoom</title>    
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="{{asset('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap')}}" rel="stylesheet">
         <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" >

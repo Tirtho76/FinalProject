@@ -7,6 +7,7 @@
                 <div class="card-body">
                     <h3 class="card-title">{{$BlogData->blog_name}}</h3>
                     <p class="card-text">{{$BlogData->blog_contributor}}</p>
+                    <p class="card-text">{{$BlogData->media}}</p>
                     <a target="_blank" href="{{$BlogData->blog_link}}" class="btn btn-primary">Read</a>
                 </div>
             </div>

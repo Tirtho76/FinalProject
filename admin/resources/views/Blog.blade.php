@@ -12,6 +12,7 @@
     <tr>
       <th class="th-sm">BLOG NAME</th>
 	  <th class="th-sm">CONTRIBUTOR NAME</th>
+    <th class="th-sm">MEDIA</th>
 	  <th class="th-sm">URL</th>	  
     </tr>
   </thead>
@@ -65,7 +66,8 @@
        		<div class="col">
              	<input id="BlogNameId" type="text" id="" class="form-control mb-3" placeholder="Blog Name">
           	 	<input id="BlogContributorId" type="text" id="" class="form-control mb-3" placeholder="Contributor Name">
-    		 	<input id="BlogURLId" type="text" id="" class="form-control mb-3" placeholder="Blog URL">     			
+               <input id="BlogMediaId" type="text" id="" class="form-control mb-3" placeholder="Media">
+    		 	    <input id="BlogURLId" type="text" id="" class="form-control mb-3" placeholder="Blog URL">     			
        		</div>       		
        	</div>
        </div>

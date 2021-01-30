@@ -19,6 +19,7 @@ function getBlogData() {
                   $('<tr>').html(
                       "<td>"+jsonData[i].blog_name+"</td>" +
                       "<td>"+jsonData[i].blog_contributor+"</td>" +
+                      "<td>"+jsonData[i].media+"</td>" +
                       "<td>"+jsonData[i].blog_link+"</td>" 
                   ).appendTo('#blog_table');
               });
@@ -46,21 +47,25 @@ $('#addNewBlogBtnId').click(function(){
 $('#BlogAddConfirmBtn').click(function(){
     var BlogName=$('#BlogNameId').val();
     var BlogContributor=$('#BlogContributorId').val();
+    var BlogMedia=$('#BlogMediaId').val();
     var BlogURL=$('#BlogURLId').val();
   
-    BlogAdd(BlogName,BlogContributor,BlogURL);
+    BlogAdd(BlogName,BlogContributor,BlogMedia,BlogURL);
 }
 )
 
 // 2.Save button e data send
-function BlogAdd(BlogName,ContributorName,BlogURL) {
+function BlogAdd(BlogName,BlogContributor,BlogMedia,BlogURL) {
   
   if(BlogName.length==0){
    toastr.error('Blog Name is Empty !');
   }
-  else if(ContributorName.length==0){
+  else if(BlogContributor.length==0){
    toastr.error('Contributor Name is Empty !');
   }
+  else if(BlogMedia.length==0){
+    toastr.error('Media is Empty !');
+   }
   else if(BlogURL.length==0){
     toastr.error('Blog URL is Empty !');
   }
@@ -69,7 +74,8 @@ function BlogAdd(BlogName,ContributorName,BlogURL) {
   $('#BlogAddConfirmBtn').html("<div class='spinner-border spinner-border-sm' role='status'></div>") //Animation....
   axios.post('/BlogAdd', {
           blog_name: BlogName,
-          blog_contributor: ContributorName,
+          blog_contributor: BlogContributor,
+          media:BlogMedia,
           blog_link: BlogURL,                                   
       })
       .then(function(response) {

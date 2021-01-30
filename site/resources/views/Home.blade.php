@@ -8,6 +8,6 @@
 
 @include('Component.HomeFeedback')
 
-@include('Component.HomeFooter')
+<!-- @include('Component.HomeFooter') -->
 
 @endsection  

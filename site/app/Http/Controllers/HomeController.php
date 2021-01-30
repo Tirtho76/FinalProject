@@ -23,10 +23,10 @@ class HomeController extends Controller
         ]);
     } 
 
-    // Request class is used to receive data
+    // Request class is used to receive data blog_name
     function FeedBackSend(Request $request){
         $name=$request->input('name');
-        $email= $request->input('email');
+        $email= $request->input('email');        
         $feedback=$request->input('feedback');
         $result= FeedBackModel::insert([
             'name'=> $name,

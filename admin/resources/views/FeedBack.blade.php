@@ -9,8 +9,8 @@
   <thead>
     <tr>
       <th class="th-sm">NAME</th>
-	  <th class="th-sm">EMAIL</th>
-	  <th class="th-sm">FEEDBACK</th>	  
+	    <th class="th-sm">EMAIL</th>
+	    <th class="th-sm">FEEDBACK</th>	  
     </tr>
   </thead>
   <tbody id="feedback_table">

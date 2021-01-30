@@ -7,9 +7,9 @@
                     <li class="nav-item m-l-10"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="fas fa-bars"></i></a> </li> 
                     <li class="nav-item mt-3">CONTRIBUTOR</li>
                 </ul>
-                <ul class="navbar-nav my-lg-0">
+                <!-- <ul class="navbar-nav my-lg-0">
                     <li class="nav-item"><a href="" class="btn btn-sm btn-danger">Logout</a></li>
-                </ul>
+                </ul> -->
             </div>
         </nav>
     </header>
@@ -19,9 +19,9 @@
                 <ul id="sidebarnav">
                     <li class="nav-devider mt-0" style="margin-bottom: 5px"></li>
 
-                    <li> <a href="{{url('/')}}" ><span> <i class="fas fa-home"></i> </span><span class="hide-menu">Home</span></a></li>
+                    <!-- <li> <a href="{{url('/')}}" ><span> <i class="fas fa-home"></i> </span><span class="hide-menu">Home</span></a></li> -->
 
-                    <li> <a href="{{url('/visitor')}}" ><span> <i class="fas fa-users"></i> </span><span class="hide-menu">Visitor</span></a></li>
+                    <li> <a href="{{url('/visitor')}}" ><span> <i class="fas fa-users"></i> </span><span class="hide-menu">User</span></a></li>
 
                     <li> <a href="{{url('/blog')}}" ><span> <i class="fas fa-book-open"></i> </span><span class="hide-menu">Blog</span></a></li>
 

@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-6 justify-content-center">
             <div class="m-lg-5 m-md-5 p-lg-5 m-sm-3 p-sm-3 p-md-5">
-                <h1 class="top-banner-title text-justify">THIS IS ONLINE BLOG</h1>
+                <h1 class="top-banner-title text-justify">BLOG AGGRIGATOR</h1>
                 <h3 class="top-banner-subtitle text-justify">Read Any Blog</h3>                                        
             </div>
         </div>

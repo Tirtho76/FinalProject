@@ -4,17 +4,17 @@
            
         </div>
         <div class="col-md-4 contact-form">
-            <h5 class="service-card-title">FeedBack</h5>
+            <h5 class="service-card-title">Feed back</h5>
             <div class="form-group ">
                 <input id="FeedBackNameId" type="text" class="form-control w-100" placeholder="Your Name">
             </div>                
             <div class="form-group">
                 <input id="FeedBackEmailId" type="text" class="form-control  w-100" placeholder="Your Email">
-            </div>
+            </div>            
             <div class="form-group">
                 <input id="FeedBackId" type="text" class="form-control  w-100" placeholder="Write Your FeedBack">
             </div>
-            <button id="FeedBackSendBtnId" class="btn btn-block normal-btn w-100">Submit</button>
+            <button id="FeedBackSendBtnId" class="btn btn-block normal-btn w-100 mb-5">Fedback submitted</button>
         </div>
     </div>
-</div>
+</div >
